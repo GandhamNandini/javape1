@@ -7,6 +7,7 @@ public class SortingNumber {
         int temp=number;
         int r,rem;
         int c=0,even=0,i=0,sorted=0;
+        //if num>0 take the single digits
         while(number>0){
             r=number%10;
             number=number/10;
@@ -15,6 +16,7 @@ public class SortingNumber {
         int array[]=new int[c];
         while(temp>0){
             rem=temp%10;
+            //if the digits are even then add the even numbers
             if(rem%2==0){
                 even=even+rem;
             }
@@ -22,10 +24,12 @@ public class SortingNumber {
             array[i]=rem;
             i++;
         }
+
         Arrays.sort(array);
         for(int j=0;j<c;j++){
             sorted=sorted*10+array[j];
         }
+        //if sum>15 return true
         if(even>15){
             return "True";
         }
