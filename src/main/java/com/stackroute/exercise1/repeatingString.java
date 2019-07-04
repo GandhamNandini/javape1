@@ -6,6 +6,7 @@ public class repeatingString {
         int i, j;
         String str = "";
         if (input2 < len) {
+            //if given input is less than length of string then repeat the string
             for (i = len - input2; i <= (len - 1); i++) {
                 str = str + input1.charAt(i);
             }
