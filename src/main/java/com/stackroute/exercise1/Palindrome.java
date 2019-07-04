@@ -8,6 +8,7 @@ public class Palindrome {
         int add = 0;
         temp = number;
         int sum = 0;
+        //if num>0 check if number is palindrome or not
         while (number > 0) {
             int reminder = number % 10;
             number = number / 10;
