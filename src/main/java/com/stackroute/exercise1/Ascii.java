@@ -14,6 +14,7 @@ public class Ascii {
         else if(character>=48 && character<=57){
             return "Digit";
         }
+        //else special characters
         else{
             return "Special Symbol";
         }
